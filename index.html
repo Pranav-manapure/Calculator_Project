@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" type="text/css" href="Calculator.css"> -->
+	<link rel="stylesheet" type="text/css" href="LightTheme.css">
+
+	<title>Calculator</title>
+</head>
+<body>
+  <div class="container">
+  	<div class="calculator">
+  		<div class="head">
+              <h2>CASIO</h2>
+        </div>
+        <!-- <div class="theme">
+            <input type="radio" name="1st" id="1st">
+            <input type="radio" name="2nd" id="2nd">
+            <input type="radio" name="3rd" id="3rd">
+        </div> -->
+  		<input type="text" placeholder="0" id="output" class="text">
+  		<button onclick="Clear()" class="hov"><b>AC</b></button>
+  		<button onclick="Del()" class="hov"><b>Del</b></button>
+  		<button onclick="display('%')" class="hov"><b>%</b></button>
+  		<button onclick="display('/')" class="hov"><b>/</b></button>
+  		<button onclick="display('7')" class="hov"><b>7</b></button>
+  		<button onclick="display('8')" class="hov"><b>8</b></button>
+  		<button onclick="display('9')" class="hov"><b>9</b></button>
+  		<button onclick="display('*')" class="hov"><b>*</b></button>
+  		<button onclick="display('4')" class="hov"><b>4</b></button>
+  		<button onclick="display('5')" class="hov"><b>5</b></button>
+  		<button onclick="display('6')" class="hov"><b>6</b></button>
+  		<button onclick="display('-')" class="hov"><b>-</b></button>
+  		<button onclick="display('1')" class="hov"><b>1</b></button>
+  		<button onclick="display('2')" class="hov"><b>2</b></button>
+  		<button onclick="display('3')" class="hov"><b>3</b></button>
+  		<button onclick="display('+')" class="hov"><b>+</b></button>
+  		<button onclick="display('.')" class="hov"><b>.</b></button>
+  		<button onclick="display('0')" class="hov"><b>0</b></button>
+  		<button onclick="calculate('=')" class="equal hov"><b>=</b></button>
+  	</div>
+  </div>
+  <script type="text/javascript">
+  	let outputscreen=document.getElementById('output');
+  	function display(num){
+  		outputscreen.value +=num;
+  	}
+  	function calculate(){
+  		try{
+  			outputscreen.value=eval(outputscreen.value);
+  		}
+  		catch(err){
+  			alert('Invalid');
+  		}
+  	}
+  	function Clear(){
+  		outputscreen.value=" ";
+  	}
+  	function Del(){
+  		outputscreen.value=outputscreen.value.slice(0,-1);
+  	}
+  </script>
+</body>
+</html> 

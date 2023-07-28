@@ -1,0 +1,80 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body{
+	background-color: hsl(202, 84%, 76%);
+}
+
+.container{
+	height: 100vh;
+	display: flex;
+	background-color:hsl(202, 90%, 4%);
+	align-items: center;
+	justify-content: center;
+}
+
+.calculator{
+	background-color:hsl(306, 100%, 98%) ;
+	padding: 15px;
+	border-radius: 20px;
+	display: grid;
+	grid-template-columns: repeat(4,68px);
+}
+h2{
+	color: black;
+	font-weight: 300;
+	font-family: Spartan;
+}
+
+input{
+	grid-column: span 4;
+	height: 70px;
+	width: 260px;
+	background-color: hsl(276, 2%, 59%) ;
+	border-radius: 20px;
+	box-shadow: inset 5px 5px 5px 2px hsl(282, 10%, 19%) ; 
+	border: none;
+	color: black;
+	font-size: 50px;
+	font-weight: 600;
+	font-family: Spartan;
+	text-align: right;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 30px;
+
+}
+
+button{
+	height: 48px;
+	width: 48px;
+	background-color: hsl(276, 2%, 59%) ;
+	border-radius: 10px;
+	box-shadow: 0px 5px 5px 2px hsl(282, 10%, 19%) ; 
+	border: none;
+	color:black;
+	margin: auto;
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 20px;
+	font-family: Spartan;
+}
+
+.equal{
+	width: 117px;
+	margin-left:10px;
+
+}
+
+.hov:hover{
+     box-shadow: inset 5px 5px 5px 2px hsl(285, 91%, 52%) ;	
+}
+/* .theme{
+	width: 5px;
+	height: 5px;
+	float: left;
+
+} */
